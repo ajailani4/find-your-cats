@@ -53,7 +53,7 @@ kotlin {
 }
 
 android {
-    namespace = "com.ajailani.kmpexample"
+    namespace = "com.ajailani.findyourcats"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
 
     sourceSets["main"].manifest.srcFile("src/androidMain/AndroidManifest.xml")
@@ -61,7 +61,7 @@ android {
     sourceSets["main"].resources.srcDirs("src/commonMain/resources")
 
     defaultConfig {
-        applicationId = "com.ajailani.kmpexample"
+        applicationId = "com.ajailani.findyourcats"
         minSdk = libs.versions.android.minSdk.get().toInt()
         targetSdk = libs.versions.android.targetSdk.get().toInt()
         versionCode = 1

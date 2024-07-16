@@ -52,7 +52,7 @@ kotlin {
 }
 
 android {
-    namespace = "com.ajailani.kmpexample.shared"
+    namespace = "com.ajailani.findyourcats.shared"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11

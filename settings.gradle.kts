@@ -1,4 +1,4 @@
-rootProject.name = "KMPExample"
+rootProject.name = "FindYourCats"
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 pluginManagement {

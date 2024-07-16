@@ -19,8 +19,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
+import com.ajailani.findyourcats.R
 import com.ajailani.findyourcats.data.model.Cat
 
 @Composable
@@ -43,6 +45,7 @@ fun CatCard(
                     .size(100.dp)
                     .clip(RoundedCornerShape(10.dp)),
                 model = cat.imageLink,
+                placeholder = painterResource(id = R.drawable.ic_launcher_background),
                 contentScale = ContentScale.Crop,
                 contentDescription = "Cat image"
             )

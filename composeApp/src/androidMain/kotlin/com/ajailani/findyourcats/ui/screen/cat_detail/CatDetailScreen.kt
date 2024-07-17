@@ -32,8 +32,7 @@ import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
 import com.ajailani.findyourcats.R
 import com.ajailani.findyourcats.ui.common.component.CatAttribute
-import com.ajailani.findyourcats.util.CatAttributeType.Rating
-import com.ajailani.findyourcats.util.CatAttributeType.Text
+import com.ajailani.findyourcats.util.CatAttributeType
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -91,17 +90,17 @@ fun CatDetailScreen(
                         )
                         Spacer(modifier = Modifier.height(20.dp))
                         Text(
-                            text = "Cat Name",
+                            text = cat.name,
                             style = MaterialTheme.typography.headlineMedium
                         )
                     }
                     Spacer(modifier = Modifier.height(25.dp))
                     Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
-                        CatAttribute(key = "Origin", value = Text(cat.origin))
-                        CatAttribute(key = "Length", value = Text(cat.length))
-                        CatAttribute(key = "Family Friendly", value = Rating(cat.familyFriendlyRating))
-                        CatAttribute(key = "General Health", value = Rating(cat.generalHealthRating))
-                        CatAttribute(key = "Grooming", value = Rating(cat.groomingRating))
+                        CatAttribute(key = "Origin", value = CatAttributeType.Text(cat.origin))
+                        CatAttribute(key = "Length", value = CatAttributeType.Text(cat.length))
+                        CatAttribute(key = "Family Friendly", value = CatAttributeType.Rating(cat.familyFriendlyRating))
+                        CatAttribute(key = "General Health", value = CatAttributeType.Rating(cat.generalHealthRating))
+                        CatAttribute(key = "Grooming", value = CatAttributeType.Rating(cat.groomingRating))
                     }
                 }
             }

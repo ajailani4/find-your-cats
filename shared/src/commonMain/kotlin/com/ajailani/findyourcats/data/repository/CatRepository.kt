@@ -24,8 +24,8 @@ class CatRepository(private val remoteDataSource: CatRemoteDataSource) {
         }
     }
 
-    fun getCatDetail(name: String) = flow {
-        val response = remoteDataSource.getCatDetail(name)
+    fun getCatDetail(id: String) = flow {
+        val response = remoteDataSource.getCatDetail(id)
 
         when (response.status) {
             OK -> {

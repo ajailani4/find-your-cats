@@ -6,5 +6,5 @@ import io.ktor.client.request.get
 class CatService(private val httpClient: HttpClient) {
     suspend fun getCats() = httpClient.get("cats")
 
-    suspend fun getCatDetail(name: String) = httpClient.get("cats/$name")
+    suspend fun getCatDetail(id: String) = httpClient.get("cats/$id")
 }

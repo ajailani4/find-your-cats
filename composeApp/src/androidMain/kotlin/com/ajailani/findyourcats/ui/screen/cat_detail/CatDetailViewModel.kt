@@ -29,7 +29,7 @@ class CatDetailViewModel(
         uiState = uiState.copy(isLoading = true)
 
         viewModelScope.launch {
-            catRepository.getCatDetail(route.name).collect {
+            catRepository.getCatDetail(route.id).collect {
                 uiState = when (it) {
                     is ApiResult.Success -> {
                         uiState.copy(

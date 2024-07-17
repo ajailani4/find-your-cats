@@ -5,6 +5,7 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class Cat(
+    val id: String,
     val name: String,
     @SerialName("image_link")
     val imageLink: String,

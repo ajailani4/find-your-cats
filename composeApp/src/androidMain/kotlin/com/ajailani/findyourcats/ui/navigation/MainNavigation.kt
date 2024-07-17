@@ -25,8 +25,8 @@ fun MainNavigation() {
 
             CatListScreen(
                 uiState = viewModel.uiState,
-                onNavigateToCatDetail = { name ->
-                    navController.navigate(CatDetailRoute(name))
+                onNavigateToCatDetail = { id ->
+                    navController.navigate(CatDetailRoute(id))
                 }
             )
         }

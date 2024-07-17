@@ -43,7 +43,7 @@ fun CatListScreen(
             items(cats) {
                 CatCard(
                     cat = it,
-                    onClick = { onNavigateToCatDetail(it.name) }
+                    onClick = { onNavigateToCatDetail(it.id) }
                 )
 
                 if (it != cats.last()) {

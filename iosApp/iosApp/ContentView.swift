@@ -2,32 +2,20 @@ import SwiftUI
 import Shared
 
 struct ContentView: View {
-    @State private var showContent = false
+    @State private var path = NavigationPath()
+    
     var body: some View {
-        VStack {
-            Button("Click me!") {
-                withAnimation {
-                    showContent = !showContent
+        NavigationStack(path: $path) {
+            CatListScreen(navigateToCatDetail: { id in
+                path.append("\(ScreenRoute.catDetail.rawValue)/\(id)")
+            })
+            .navigationDestination(for: String.self) { path in
+                let extractedRoute = path.split(separator: "/")
+                
+                if extractedRoute[0] == ScreenRoute.catDetail.rawValue {
+                    CatDetailScreen(id: String(extractedRoute[1]))
                 }
-            }
-
-            if showContent {
-                VStack(spacing: 16) {
-                    Image(systemName: "swift")
-                        .font(.system(size: 200))
-                        .foregroundColor(.accentColor)
-                    Text("SwiftUI: \(Greeting().greet())")
-                }
-                .transition(.move(edge: .top).combined(with: .opacity))
             }
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
-        .padding()
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
     }
 }

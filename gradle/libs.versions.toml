@@ -20,6 +20,7 @@ kotlinxSerialization = "1.6.3"
 koinBom = "3.6.0-wasm-alpha2"
 ktor = "2.3.12"
 coilCompose = "2.6.0"
+skie = "0.8.2"
 
 [libraries]
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
@@ -62,3 +63,4 @@ jetbrainsCompose = { id = "org.jetbrains.compose", version.ref = "compose-plugin
 compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
 kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+touchlab-skie = { id = "co.touchlab.skie", version.ref = "skie" }

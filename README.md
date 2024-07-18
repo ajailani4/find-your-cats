@@ -2,7 +2,7 @@
 Find Your Cats is a multiplatform app that can be used to find cats. Currently this app is only available on Android and iOS.
 
 ## Architecture
-This app implements layered architecture which has 2 layers, data layer on shared module and presentation layer on each platform-specific module.
+This app implements layered architecture which has 2 layers, data layer on shared module and presentation layer on each platform-specific modules.
 
 ## Tech Stack and Libraries
 - Kotlin

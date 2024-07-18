@@ -1,5 +1,5 @@
 # Find Your Cats
-Find Your Cats is a multiplatform app that can be used to find cats. Currently this app is only available on Android and iOS.
+Find Your Cats is a multiplatform app that can be used to find cats. Currently this app is only available on Android and iOS. This app is built with Kotlin Multiplatform and native UI on both platforms. If you want to take a look the Compose Multiplatform version, you can go through this repo (https://github.com/ajailani4/find-your-cats-cmp)
 
 ## Architecture
 This app implements layered architecture which has 2 layers, data layer on shared module and presentation layer on each platform-specific modules.

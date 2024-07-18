@@ -17,4 +17,5 @@ This app implements layered architecture which has 2 layers, data layer on share
 - Nuke (Cache async image in SwiftUI)
 
 ## Preview
-https://github.com/user-attachments/assets/72b06141-17d3-4fc2-9314-1bcbd960bd27
+https://github.com/user-attachments/assets/5a9414b3-59dc-4d73-bd9b-87454376a4bb
+

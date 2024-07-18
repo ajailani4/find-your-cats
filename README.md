@@ -12,7 +12,9 @@ This app implements layered architecture which has 2 layers, data layer on share
 - Coroutines
 - Ktor Client
 - Kotlin Serialization
+- Coil
 - Skie (Interop Kotlin Flow and Swift async-await)
 - Nuke (Cache async image in SwiftUI)
 
 ## Preview
+https://github.com/user-attachments/assets/72b06141-17d3-4fc2-9314-1bcbd960bd27
